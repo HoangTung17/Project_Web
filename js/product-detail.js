@@ -88,8 +88,8 @@ renderProducts = (products) => {
                             ${e.name}
                         </div>
                         <div class="product-card-price">
-                            <span><del>${e.old_price}</del></span>
-                            <span class="curr-price">${e.curr_price}</span>
+                            <span><del>$${e.old_price}</del></span>
+                            <span class="curr-price">$${e.curr_price}</span>
                         </div>
                     </div>
                 </div>
