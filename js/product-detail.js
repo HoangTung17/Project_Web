@@ -18,7 +18,7 @@ let products = [
         image2: 'images/Keychron-C2_v5.jpg',
         old_price: '80',
         curr_price: '70',
-        inCart: ''
+        inCart: 0
     },
     {
         name: 'Keychron-K1',
@@ -26,7 +26,7 @@ let products = [
         image2: 'images/Keychron-K1_v5.jpg',
         old_price: '80',
         curr_price: '70',
-        inCart: ''
+        inCart: 0
     },
     {
         name: 'Keychron-K2',
@@ -42,7 +42,7 @@ let products = [
         image2: '/images/Keychron-K3_v5.jpg',
         old_price: '80',
         curr_price: '70',
-        inCart: ''
+        inCart: 0
     },
     {
         name: 'Keychron-K4',
@@ -50,7 +50,7 @@ let products = [
         image2: 'images/Keychron-K4_v5.jpg',
         old_price: '80',
         curr_price: '70',
-        inCart: ''
+        inCart: 0
     },
     {
         name: 'Keychron-K6',
@@ -58,7 +58,7 @@ let products = [
         image2: 'images/Keychron-K6_v5.jpg',
         old_price: '80',
         curr_price: '70',
-        inCart: ''
+        inCart: 0
     },
     {
         name: 'Keychron-K8',
@@ -66,7 +66,7 @@ let products = [
         image2: 'images/Keychron-K8_v5.jpg',
         old_price: '80',
         curr_price: '70',
-        inCart: ''
+        inCart: 0
     },
 ]
 
