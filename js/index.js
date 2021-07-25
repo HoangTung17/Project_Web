@@ -41,7 +41,7 @@ let products = [
     image2: "images/Keychron-K4_v5.jpg",
     old_price: "80",
     curr_price: "70",
-    inCart: ""
+    inCart: 0
   },
   {
     
