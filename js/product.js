@@ -4,49 +4,56 @@ let products = [
         image1: 'images/Keychron-C2_v4.jpg',
         image2: 'images/Keychron-C2_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
     {
         name: 'Keychron-K1',
         image1: 'images/Keychron-K1_v4.jpg',
         image2: 'images/Keychron-K1_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
     {
         name: 'Keychron-K2',
         image1: 'images/Keychron-K2_v4.jpg',
         image2: 'images/Keychron-K2_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
     {
         name: 'Keychron-K3',
         image1: '/images/Keychron-K3_v4.jpg',
         image2: '/images/Keychron-K3_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
     {
         name: 'Keychron-K4',
         image1: 'images/Keychron-K4_v4.jpg',
         image2: 'images/Keychron-K4_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
     {
         name: 'Keychron-K6',
         image1: 'images/Keychron-K6_v4.jpg',
         image2: 'images/Keychron-K6_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
     {
         name: 'Keychron-K8',
         image1: 'images/Keychron-K8_v4.jpg',
         image2: 'images/Keychron-K8_v5.jpg',
         old_price: '80',
-        curr_price: '70'
+        curr_price: '70',
+        inCart: ''
     },
 ]
 
@@ -64,9 +71,9 @@ renderProducts = (products) => {
                     <div class="product-card-info">
                         <div class="product-btn">
                             <a href="product-detail.html" class="btn-flat btn-hover btn-shop-now">shop now</a>
-                            <button class="btn-flat btn-hover btn-cart-add">
-                                <i class='bx bxs-cart-add'></i>
-                            </button>
+                            <a class="btn-flat btn-hover btn-cart-add add-cart" id="add-to-cart">
+                                <i class='bx bxs-cart-add '></i>
+                            </a>
                             <button class="btn-flat btn-hover btn-cart-add">
                                 <i class='bx bxs-heart'></i>
                             </button>
