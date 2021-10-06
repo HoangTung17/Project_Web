@@ -1,3 +1,40 @@
+let slide_index = 0
+let slide_play = true
+let slides = document.querySelectorAll(".slide")
+
+hideAllSlide = () => {
+  slides.forEach(e => {
+    e.classList.remove('active')
+  })
+}
+
+showSlide = () => {
+  hideAllSlide()
+  slides[slide_index].classList.add('active')
+}
+
+nextSlide = () => slide_index = slide_index + 1 === slides.length ? 0 : slide_index + 1
+
+prevSlide = () => slide_index = slide_index - 1 < 0 ? slides.length - 1 : slide_index - 1
+
+// pause slide when hover slide 
+document.querySelector('.slide').addEventListener('mouseover', () => slide_play = false)
+
+// enable slide when mouse leave out slider 
+document.querySelector('.slide').addEventListener('mouseleave', () => slide_play = true)
+
+// slide controller
+document.querySelector('.slide-next').addEventListener('click', () => {
+  nextSlide()
+  showSlide()
+}) 
+
+document.querySelector('.slide-prev').addEventListener('click', () => {
+  prevSlide()
+  showSlide()
+}) 
+
+
 let products = [
   {
     
@@ -98,4 +135,14 @@ products.forEach((e) => {
   product_list.insertAdjacentHTML("beforeend", prod);
   best_product_list.insertAdjacentHTML("afterbegin", prod);
 });
+
+let loginForm = document.querySelector('.login-form-container');
+
+document.querySelector('#btn-login').onclick = () => {
+    loginForm.classList.toggle('active');
+}
+
+document.querySelector('#close-login-btn').onclick = () => {
+  loginForm.classList.remove('active');
+}
 
