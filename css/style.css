@@ -22,7 +22,7 @@
         -webkit-tap-highlight-color: transparent;
     }
 
-    body {
+    body {  
         font-family: 'Poppins', sans-serif;
         overflow-x: hidden;
         position: relative;
@@ -65,7 +65,7 @@
 
     .text-red {
         color: var(--red);
-    }
+    }   
 
     .mobile-menu {
         align-items: center;
